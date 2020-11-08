@@ -9,13 +9,8 @@
 
 
 
-<?php
-foreach ($data as $item) {
-echo "
-<correspondence-card
-curatorial-statement='".$item['id']."'
-></correspondence-card>
-";
-}
-?>
+@foreach($reqi as $letter)
+      <letter-preview-card title="{{$letter['element_texts']['0']['text']}}"></letter-preview-card>
+@endforeach
+
 @endsection

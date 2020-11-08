@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -20,6 +21,8 @@ Route::view('/', 'index');
 Route::view('/about', [PageController::class,'page']);
 
 Route::get('/correspondences', [LettersController::class, 'list']);
+Route::get('/letters', [LettersController::class, 'list']);
+
 
 Route::get('/letter/{id}', [LettersController::class, 'view']);
 
