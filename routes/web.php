@@ -14,22 +14,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 use App\Http\Controllers\LettersController;
+use App\Http\Controllers\LetController;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\PeopleController;
 
 Route::view('/', 'index');
-
 Route::view('/about', [PageController::class,'page']);
-
 Route::get('/correspondences', [LettersController::class, 'list']);
 Route::get('/letters', [LettersController::class, 'list']);
-
-
-Route::get('/letter/{id}', [LettersController::class, 'view']);
-
-Route::get('/people', [EntitiesController::class, 'people']);
-
-Route::get('/person/{name}', [EntitiesController::class, 'entity']);
-
-Route::get('/place/{name}', [EntitiesController::class, 'entity']);
-
-Route::get('/artwork/{name}', [EntitiesController::class, 'entity']);
+Route::get('/letter/{id}', [LetController::class, 'view']);
+Route::get('/entities', [PeopleController::class, 'people']);
+Route::get('/entity/{name}', [EntitiesController::class, 'entity']);

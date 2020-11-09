@@ -15,7 +15,7 @@ class LettersController extends Controller
 
       return view('letters')
         ->with('reqi', $reqi);
-         
+
 
     }
 
