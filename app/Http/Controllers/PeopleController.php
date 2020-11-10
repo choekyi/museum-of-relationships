@@ -19,4 +19,13 @@ class PeopleController extends Controller
         ->with('reqip', $reqip);
     }
 
+    function entity($id)
+    {
+      $reqs = Http::get('http://hayleypapers.fitzmuseum.cam.ac.uk/api/items/'.$id);
+      $reqit = json_decode($reqs->getBody(), true);
+      return view('entity')
+        ->with('reqit', $reqit);
+    }
+
+
 }

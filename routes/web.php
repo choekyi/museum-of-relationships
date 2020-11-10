@@ -24,4 +24,4 @@ Route::get('/correspondences', [LettersController::class, 'list']);
 Route::get('/letters', [LettersController::class, 'list']);
 Route::get('/letter/{id}', [LetController::class, 'view']);
 Route::get('/entities', [PeopleController::class, 'people']);
-Route::get('/entity/{name}', [EntitiesController::class, 'entity']);
+Route::get('/entity/{id}', [PeopleController::class, 'entity']);
