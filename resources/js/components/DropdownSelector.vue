@@ -9,7 +9,7 @@
       {{ options[activeIndex] }} ▾
     </span>
     <div
-      class="absolute z-1 right-0 shadow-4 mt1 bg-white"
+      class="absolute z-1 right-0 shadow-3 mt1 bg-white"
       :class="isExpanded ? 'db' : 'dn'"
     >
       <span

@@ -1,6 +1,7 @@
 @extends('layouts.layout')
 
 @section('title', 'Most Sacred Things : Correspondences')
+@section('headstyle','wide')
 
 @section('content')
 

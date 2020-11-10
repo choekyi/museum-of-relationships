@@ -1,5 +1,5 @@
 <template>
-  <div class="entity-card bg-white pa3 sans-serif shadow-4">
+  <div class="entity-card bg-white pa3 sans-serif shadow-3">
     <div class="flex items-center">
       <AvatarItem :type="type" small :bgImageSrc="bgImageSrc" class="mr3" />
       <div>

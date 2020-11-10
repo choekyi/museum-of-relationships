@@ -1,6 +1,6 @@
 <template>
   <div
-    class="letter-preview-card bg-white w-100 sans-serif f5 shadow-4 flex  flex-column-reverse flex-row-l"
+    class="letter-preview-card mb3 bg-white w-100 sans-serif f5 shadow-3 flex flex-column-reverse flex-row-l"
   >
     <div class="letter-preview-card__left-side pa3 w-40-l">
       <h2 class="f3 serif mb2">{{ title }}</h2>
