@@ -1,6 +1,6 @@
 @extends('layouts.layout')
 
-@section('title', 'Most Sacred Things : Letter')
+@section('title', 'A Museum of Relationships : Letter')
 
 @section('content')
 <h1>{{$reqi['element_texts']['3']['text']}}</h1>

@@ -1,18 +1,31 @@
 @extends('layouts.layout')
 
-@section('title', 'Most Sacred Things : Correspondences')
+@section('title', 'A Museum of Relationships : Correspondences')
+
+@section('headstyle','wide')
 
 @section('content')
+<h1>People, places, artworks...</h1>
+<h3>...and other entities mentioned in Hayley's letters</h3>
+<p>A longer curatorial statement, potentially spread over multiple paragraphs. This text describes the what kinds of entities are included here, how this forms an intricate web of relationships.
+</p>
+<p>It might also say something about the process by which these relationships have been extracted and analysed.</p>
 
-<h1 class="serif">test</h1>
-
+<div class="flex">
+  <div class="ma2">
+<h1 class="serif">People</h1>
 @foreach($reqit as $entity)
-      <entity-card title="{{$entity['element_texts']['0']['text']}}" link-path="/entity/{{$entity['id']}}"></entity-card>
+      <entity-card title="{{$entity['element_texts']['1']['text']}} {{$entity['element_texts']['2']['text']}}" link-path="/entity/{{$entity['id']}}" type="person"></entity-card>
 @endforeach
+  </div>
 
+  <div class="ma2">
+<h1 class="serif">Places</h1>
 
 @foreach($reqip as $entity)
-      <entity-card title="{{$entity['element_texts']['0']['text']}}" link-path="/entity/{{$entity['id']}}"></entity-card>
+      <entity-card title="{{$entity['element_texts']['0']['text']}}" link-path="/entity/{{$entity['id']}}" type="place"></entity-card>
 @endforeach
+  </div>
+</div>
 
 @endsection

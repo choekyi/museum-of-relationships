@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white shadow-3 mw6 pa3 mb3">
+  <div class="bg-white shadow-3 mw6 pa3 ma3">
     <h1 class="serif f2 mb3">{{ title }}</h1>
     <p class="sans-serif mb3">{{ content }}</p>
     <ButtonLink :link="buttonLink"

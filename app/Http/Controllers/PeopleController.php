@@ -19,6 +19,4 @@ class PeopleController extends Controller
         ->with('reqip', $reqip);
     }
 
-
-
 }

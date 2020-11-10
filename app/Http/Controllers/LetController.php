@@ -12,10 +12,7 @@ class LetController extends Controller
   {
     $reqs = Http::get('http://hayleypapers.fitzmuseum.cam.ac.uk/api/items/'.$id);
     $reqi = json_decode($reqs->getBody(), true);
-
     return view('let')
       ->with('reqi', $reqi);
-
-
   }
 }

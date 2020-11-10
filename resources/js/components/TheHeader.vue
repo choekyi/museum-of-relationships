@@ -7,7 +7,7 @@
       :class="wide ? 'mb4 f2-m f1-l' : 'dtc-l w-40-l tl-l mb0-l f2-ns'"
       class="db v-mid link w-100 tc mb2 serif f3"
     >
-      Most Sacred Things
+      A Museum of Relationships
     </h1>
     <div
       :class="wide ? '' : 'dtc-l w-60-l tr-l'"
