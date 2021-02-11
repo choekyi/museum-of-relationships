@@ -2,7 +2,7 @@
 
 @section('headstyle','wide')
 
-@section('title', 'Most Sacred Things')
+@section('title', 'A Museum of Relationships')
 
 @section('content')
 <h1 class="serif">A purposeful call to action as a title</h1>
