@@ -5,9 +5,7 @@
 @section('headstyle','wide')
 
 @section('content')
-<entity-header
-type='person'
-title='{{$reqit["element_texts"]["1"]["text"]}} {{$reqit["element_texts"]["2"]["text"]}}'>
-</entity-header>
 
+
+<?php echo $reqip; ?>
 @endsection
