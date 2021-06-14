@@ -15,6 +15,4 @@ v-bind:entities ="{{json_encode($reqip)}}"
 ></entity-list>
 
 
-
-
 @endsection

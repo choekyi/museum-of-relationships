@@ -28,7 +28,7 @@ class PeopleController extends Controller
             if (isset($reqip['item_type']['name']) && (($reqip['item_type']['name'] == "Place") OR ($reqip['item_type']['name'] == "Person"))) {
               $type = $reqip['item_type']['name'];
               $id = $reqip['id'];
-              $url = $reqip['url'];
+              $path = "entity/".$reqip['id'];
 
           $ets = $reqip['element_texts'];
             $arr = array();
@@ -37,11 +37,12 @@ class PeopleController extends Controller
           $et = Arr::dot($et);
           $arr = Arr::prepend($arr, $et['text'], str_replace(" ", "",strtolower($et['element.name'])));
           $arr = Arr::prepend($arr, $type, 'type');
-          $arr = Arr::prepend($arr, $url, 'url');
+          $arr = Arr::prepend($arr, $path, 'path');
           $arr = Arr::prepend($arr, $id, 'id');
         }
 
         array_push($texts,$arr);
+
 
       }
 }
