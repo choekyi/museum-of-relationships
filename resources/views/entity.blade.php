@@ -6,6 +6,4 @@
 
 @section('content')
 
-
-<?php echo $reqip; ?>
 @endsection

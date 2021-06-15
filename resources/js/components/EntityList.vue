@@ -5,6 +5,7 @@
       :key="entity.title"
       :type="entity.type"
       :title="entity.title"
+      :linkPath="entity.linkPath"
       :bgImageSrc="entity.bgImageSrc"
       class="mb3"
     />
